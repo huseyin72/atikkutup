@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     {% load static %}
         <link rel="stylesheet" href="{% static 'navbar.css' %}">
@@ -23,15 +26,17 @@
             <div class="logo">
                <!--  <img src="imgs/SDG Wheel_WEB.png" alt="" srcset=""> -->
                 <!-- <h4>ATIKKÜTÜPHANESİ</h4> -->
-               <!--  <img style="height: 6rem; width: 14rem;" src="{%static 'imgs/4yeni.png'%}" alt="" srcset=""> -->
-                <img style="height: 6rem; width: 14rem;" src="{%static 'imgs/yeni5.png'%}" alt="" srcset="">
+               <!--  <img style="height: 6rem; width: 16rem;" src="{%static 'imgs/4yeni.png'%}" alt="" srcset=""> -->
+                <img style="height: 3rem; width: 13.25rem;" src="{%static 'imgs/atik.png'%}" alt="" srcset="">
                 
                
             </div>
             <ul class="ul">
                 <li><a  class="home" href="">Anasayfa</a></li>
-                <li><a class="a1" href="works">Projeler</a></li>
+                <li id="dropDownLi"><a class="a1 a2" href="about">Atık Türleri <i id="arrow" style="margin: 0; padding: 0; color: #1f4e6e; background-color: white;" class="fa-solid fa-caret-down"></i></a></li>
+                <li><a class="a1" href="contact">Bize Ulaşın</a></li>
                 <li><a class="a1" href="about">Hakkımızda</a></li>
+                
             </ul>
             
             <div class="burger">
@@ -44,7 +49,8 @@
            
         </div>
         <div class="navDrop">
-            <ul class="navDropUl">
+            <div style="width: 100vw; height: 1rem; background-color: #1f4e6e;"></div>
+            <ul id="blue" class="navDropUl">
                <!--  <li><a href="">atık</a></li>
                 <li><a href="">atık</a></li>
                 <li><a href="">atık</a></li>

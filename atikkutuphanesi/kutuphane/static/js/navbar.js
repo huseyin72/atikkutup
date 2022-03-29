@@ -102,3 +102,35 @@ atikAdd();
 /* navSlide(); */
 /* hoverFunc();
 textDecoration(ul2) */
+
+
+/* 
+$(document).ready(function(){
+    console.log("none")
+$("#dropDownLi").hover(function(){
+    $("#deneme").css("display", "flex");
+    }, function(){
+    $("#deneme").css("display","none");
+    });
+}); */
+const deneme = document.querySelector("#blue");
+const buttonDrop = document.querySelector("#dropDownLi");
+const arrow = document.querySelector("#arrow");
+buttonDrop.addEventListener("click", (e)=>{
+    if (blue.style.display == "flex"){
+        blue.style.transition=`  3s ease-out;`;
+        blue.style.display = "none";
+        arrow.className = "fa-solid fa-caret-down"
+
+    }
+    else{
+        blue.style.display = "flex"
+        arrow.className = "fa-solid fa-caret-up"
+
+
+
+
+    }
+    e.preventDefault();
+
+})

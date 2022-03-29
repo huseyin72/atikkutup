@@ -95,7 +95,7 @@ color: #19486a;
   overflow-x: hidden;
   
   min-width:100vw;
-  min-height:3rem;
+  /* min-height:3rem; */
   background-color:	#1f4e6e;
   display:block;
   
@@ -108,6 +108,8 @@ color: #19486a;
   flex-wrap: wrap;
   justify-content:space-around;
   align-items: center;
+  
+  display: none;
   
   
   
@@ -168,6 +170,7 @@ color: #19486a;
 
   .navDrop{
     display: none;
+
   }
   .navDropUl {
    /*  display: none; */
@@ -263,3 +266,15 @@ display: none;
   justify-content: center;
   align-items: center;
 }
+
+
+/* navbar dropdawnları --------------------- */
+.ul #dropDownLi:hover > .ul #deneme{
+
+  display: flex;
+}
+#blue{
+  
+  
+}
+
